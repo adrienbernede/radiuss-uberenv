@@ -372,7 +372,7 @@ class SpackEnv(UberEnv):
             spack_branch = self.project_opts.get("spack_branch", "develop")
             spack_url = self.project_opts.get("spack_url", "https://github.com/spack/spack.git")
 
-            clone_cmd =  "git {} clone -b {} {}".format(clone_opts, spack_branch,spack_url)
+            clone_cmd =  "git {} clone -b {} {} spack".format(clone_opts, spack_branch,spack_url)
             sexe(clone_cmd, echo=True)
 
             # optionally, check out a specific commit
