@@ -1,0 +1,7 @@
+{
+"package_name" : "radiuss",
+"package_version" : "master",
+"spack_url": "ssh://git@czgitlab.llnl.gov:7999/spackpipelines/spack-for-ci.git",
+"spack_commit": "radiuss-ci",
+"spack_activate" : {}
+}
