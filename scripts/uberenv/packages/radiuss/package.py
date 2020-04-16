@@ -30,6 +30,8 @@ class Radiuss(BundlePackage):
     depends_on('zfp')
     depends_on('scr')
 
+    depends_on('hdf5@1.8.21')
+
     phases= ['hostconfig']
 
     def hostconfig(self, spec, prefix, py_site_pkgs_dir=None):
