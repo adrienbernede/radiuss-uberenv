@@ -4,6 +4,6 @@
 "package_final_phase" : "hostconfig",
 "package_source_dir" : "../..",
 "spack_url": "ssh://git@czgitlab.llnl.gov:7999/spackpipelines/spack-for-ci.git",
-"spack_commit": "radiuss-ci",
+"spack_branch": "radiuss-ci",
 "spack_activate" : {}
 }
