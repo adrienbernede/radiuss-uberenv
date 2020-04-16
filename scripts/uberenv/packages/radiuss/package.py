@@ -33,3 +33,4 @@ class Radiuss(BundlePackage):
     phases= ['hostconfig']
 
     def hostconfig(self, spec, prefix, py_site_pkgs_dir=None):
+        pass
