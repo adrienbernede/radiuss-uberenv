@@ -1,3 +1,10 @@
+##############################################################################
+# Copyright (c) 2020, Lawrence Livermore National Security, LLC and
+# RADIUSS Uberenv project contributors. See the LICENSE file for details.
+#
+# SPDX-License-Identifier: MIT
+##############################################################################
+
 # -------------------------------------------------------------------------
 # This is the default spack configuration file.
 #
@@ -13,6 +20,7 @@
 # Per-user settings (overrides default and site settings):
 #   ~/.spack/config.yaml
 # -------------------------------------------------------------------------
+
 config::
   # This is the path to the root of the Spack install tree.
   # You can use $spack here to refer to the root of the spack instance.

@@ -1,9 +1,9 @@
-###############################################################################
-# Copyright (c) 2019, Lawrence Livermore National Security, LLC and other
-# RADIUSS-CI project contributors. See top-level COPYRIGHT file for details.
+##############################################################################
+# Copyright (c) 2020, Lawrence Livermore National Security, LLC and
+# RADIUSS Uberenv project contributors. See the LICENSE file for details.
 #
 # SPDX-License-Identifier: MIT
-###############################################################################
+##############################################################################
 
 packages::
   all:

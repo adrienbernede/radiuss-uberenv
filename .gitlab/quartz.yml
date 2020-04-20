@@ -1,3 +1,10 @@
+##############################################################################
+# Copyright (c) 2020, Lawrence Livermore National Security, LLC and
+# RADIUSS Uberenv project contributors. See the LICENSE file for details.
+#
+# SPDX-License-Identifier: MIT
+##############################################################################
+
 ####
 # Shared configuration of jobs for quartz
 .on_quartz:
