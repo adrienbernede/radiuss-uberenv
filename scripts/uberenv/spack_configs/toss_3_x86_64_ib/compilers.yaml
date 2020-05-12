@@ -22,7 +22,9 @@ compilers::
 - compiler:
     environment: {}
     extra_rpaths: []
-    flags: {}
+    flags:
+      cflags: -gcc-name=/usr/tce/packages/gcc/gcc-8.1.0/bin/gcc
+      cxxflags: -gxx-name=/usr/tce/packages/gcc/gcc-8.1.0/bin/g++
     modules: []
     operating_system: rhel7
     paths:
