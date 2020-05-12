@@ -58,3 +58,11 @@ build_quartz_gcc_8_1_0:
     COMPILER: "gcc@8.1.0"
     SPEC: "@1.0.0%${COMPILER}"
   extends: .build_quartz
+
+####
+# Build jobs
+build_quartz_intel_18_0_1:
+  variables:
+    COMPILER: "intel@18.0.1"
+    SPEC: "@1.0.0%${COMPILER}"
+  extends: .build_quartz
