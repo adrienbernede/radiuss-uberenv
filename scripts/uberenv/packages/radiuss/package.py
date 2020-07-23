@@ -7,10 +7,12 @@ from spack import *
 
 
 class Radiuss(BundlePackage):
-    """LLNL's RADIUSS project—Rapid Application Development via an
-    Institutional Universal Software Stack—aims to broaden usage across LLNL
+    """LLNL's RADIUSS project - Rapid Application Development via an
+    Institutional Universal Software Stack - aims to broaden usage across LLNL
     and the open source community of a set of libraries and tools used for
     HPC scientific application development."""
+
+    maintainers = ['adrienbernede']
 
     homepage = "https://software.llnl.gov/radiuss/"
 
@@ -31,8 +33,3 @@ class Radiuss(BundlePackage):
     depends_on('scr')
 
     depends_on('hdf5@1.8.21')
-
-    phases= ['hostconfig']
-
-    def hostconfig(self, spec, prefix, py_site_pkgs_dir=None):
-        pass
