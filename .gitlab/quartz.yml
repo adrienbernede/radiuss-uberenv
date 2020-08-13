@@ -49,7 +49,9 @@ release_resources_build_quartz:
     - JOBID=$(squeue -h --name=${SLURM_ALLOC_NAME} --format=%A)
     - JOBID=$(if [[ -n "${JOBID}" ]]; then echo "--jobid=${JOBID}"; fi)
     - EXEC_PREFIX="srun ${JOBID} -t 30 -N 1 -n 1 -c 36"
-    - ${EXEC_PREFIX} python scripts/uberenv/uberenv.py --spec=${SPEC}
+    - PREFIX="/dev/shm/${SLURM_ALLOC_NAME}"
+    - mkdir ${PREFIX}
+    - ${EXEC_PREFIX} python scripts/uberenv/uberenv.py --spec=${SPEC} --prefix=${PREFIX}
 
 ####
 # Build jobs
