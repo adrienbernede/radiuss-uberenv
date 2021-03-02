@@ -18,18 +18,18 @@ packages::
   mvapich2:
     buildable: False
     externals:
-      - spec: mvapich2@2.2%gcc@8.1.0 arch=linux-rhel7-broadwell:
+      - spec: mvapich2@2.2%gcc@8.1.0 arch=linux-rhel7-broadwell
         prefix: /usr/tce/packages/mvapich2/mvapich2-2.2-gcc-8.1.0
-      - spec: mvapich2@2.3%gcc@8.1.0 arch=linux-rhel7-broadwell:
+      - spec: mvapich2@2.3%gcc@8.1.0 arch=linux-rhel7-broadwell
         prefix: /usr/tce/packages/mvapich2/mvapich2-2.3-gcc-8.1.0
   openmpi:
     buildable: False
     externals:
-      - spec: openmpi@2.0.0%gcc@8.1.0 arch=linux-rhel7-broadwell:
+      - spec: openmpi@2.0.0%gcc@8.1.0 arch=linux-rhel7-broadwell
         prefix: /usr/tce/packages/openmpi/openmpi-2.0.0-gcc-8.1.0
-      - spec: openmpi@2.1.0%gcc@8.1.0 arch=linux-rhel7-broadwell:
+      - spec: openmpi@2.1.0%gcc@8.1.0 arch=linux-rhel7-broadwell
         prefix: /usr/tce/packages/openmpi/openmpi-2.1.0-gcc-8.1.0
-      - spec: openmpi@3.0.1%gcc@8.1.0 arch=linux-rhel7-broadwell:
+      - spec: openmpi@3.0.1%gcc@8.1.0 arch=linux-rhel7-broadwell
         perfix: /usr/tce/packages/openmpi/openmpi-3.0.1-gcc-8.1.0
 
   apple-libunwind:
