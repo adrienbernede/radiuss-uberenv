@@ -36,86 +36,84 @@ packages::
     buildable: False
 
   cmake:
+    buildable: False
     version: [3.14.5]
     externals:
       - spec: cmake@3.14.5
         prefix: /usr/tce/packages/cmake/cmake-3.14.5
-    buildable: False
 
   netlib-lapack:
+    buildable: False
     externals:
       - spec: netlib-lapack@3.6.1
         prefix: /usr
-    buildable: False
 
 # System level packages to not build
   autoconf:
+    buildable: False
     externals:
       - spec: autoconf
         prefix: /usr
-    buildable: False
 
   automake:
+    buildable: False
     externals:
       - spec: automake
         prefix: /usr
-    buildable: False
 
   bzip2:
+    buildable: False
     externals:
       - spec: bzip2
         prefix: /usr
-    buildable: False
 
   gettext:
+    buildable: False
     externals:
       - spec: gettext
         prefix: /usr
-    buildable: False
 
   libiconv:
+    buildable: False
     externals:
       - spec: libiconv
         prefix: /usr
-    buildable: False
 
   libtool:
+    buildable: False
     externals:
       - spec: libtool
         prefix: /usr
-    buildable: False
 
   m4:
+    buildable: False
     externals:
       - spec: m4
         prefix: /usr
-    buildable: False
 
   perl:
+    buildable: False
     externals:
       - spec: perl
         prefix: /usr
-    buildable: False
 
   pkg-config:
+    buildable: False
     externals:
       - spec: pkg-config
         prefix: /usr
-    buildable: False
 
   tar:
+    buildable: False
     externals:
       - spec: tar
         prefix: /usr
     paths:
       tar: /usr
-    buildable: False
 
   graphviz:
+    buildable: False
     externals:
       - spec: graphviz
         prefix: /usr
-    buildable: False
-
-
 
