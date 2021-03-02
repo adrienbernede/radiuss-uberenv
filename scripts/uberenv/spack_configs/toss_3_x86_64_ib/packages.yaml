@@ -13,94 +13,108 @@ packages::
       mpi: [mvapich2, openmpi]
       unwind: [libunwind]
 
+  mpi:
+    buildable: False
   mvapich2:
     buildable: False
-    paths:
-      mvapich2@2.2%gcc@8.1.0 arch=linux-rhel7-broadwell: /usr/tce/packages/mvapich2/mvapich2-2.2-gcc-8.1.0
-      mvapich2@2.3%gcc@8.1.0 arch=linux-rhel7-broadwell: /usr/tce/packages/mvapich2/mvapich2-2.3-gcc-8.1.0
+    externals:
+      - spec: mvapich2@2.2%gcc@8.1.0 arch=linux-rhel7-broadwell:
+        prefix: /usr/tce/packages/mvapich2/mvapich2-2.2-gcc-8.1.0
+      - spec: mvapich2@2.3%gcc@8.1.0 arch=linux-rhel7-broadwell:
+        prefix: /usr/tce/packages/mvapich2/mvapich2-2.3-gcc-8.1.0
   openmpi:
     buildable: False
-    paths:
-      openmpi@2.0.0%gcc@8.1.0 arch=linux-rhel7-broadwell: /usr/tce/packages/openmpi/openmpi-2.0.0-gcc-8.1.0
-      openmpi@2.1.0%gcc@8.1.0 arch=linux-rhel7-broadwell: /usr/tce/packages/openmpi/openmpi-2.1.0-gcc-8.1.0
-      openmpi@3.0.1%gcc@8.1.0 arch=linux-rhel7-broadwell: /usr/tce/packages/openmpi/openmpi-3.0.1-gcc-8.1.0
-  mpich:
-    buildable: False
-  spectrum-mpi:
-    buildable: False
-  charmpp:
-    buildable: False
-  charm:
-    buildable: False
-  intel-mpi:
-    buildable: False
-  intel-parallel-studio:
-    buildable: False
-  fujitsu-mpi:
-    buildable: False
-  mpilander:
-    buildable: False
-  mpt:
-    buildable: False
+    externals:
+      - spec: openmpi@2.0.0%gcc@8.1.0 arch=linux-rhel7-broadwell:
+        prefix: /usr/tce/packages/openmpi/openmpi-2.0.0-gcc-8.1.0
+      - spec: openmpi@2.1.0%gcc@8.1.0 arch=linux-rhel7-broadwell:
+        prefix: /usr/tce/packages/openmpi/openmpi-2.1.0-gcc-8.1.0
+      - spec: openmpi@3.0.1%gcc@8.1.0 arch=linux-rhel7-broadwell:
+        perfix: /usr/tce/packages/openmpi/openmpi-3.0.1-gcc-8.1.0
 
   apple-libunwind:
     buildable: False
 
   cmake:
     version: [3.14.5]
-    paths:
-      cmake@3.14.5: /usr/tce/packages/cmake/cmake-3.14.5
+    externals:
+      - spec: cmake@3.14.5
+      - prefix: /usr/tce/packages/cmake/cmake-3.14.5
     buildable: False
 
   netlib-lapack:
-    paths:
-      netlib-lapack@3.6.1: /usr
+    externals:
+      - spec: netlib-lapack@3.6.1
+      - prefix: /usr
     buildable: False
 
 # System level packages to not build
   autoconf:
-    paths:
-      autoconf: /usr
+    externals:
+      - spec: autoconf
+      - prefix: /usr
     buildable: False
+
   automake:
-    paths:
-      automake: /usr
+    externals:
+      - spec: automake
+      - prefix: /usr
     buildable: False
+
   bzip2:
-    paths:
-      bzip2: /usr
+    externals:
+      - spec: bzip2
+      - prefix: /usr
     buildable: False
+
   gettext:
-    paths:
-      gettext: /usr
+    externals:
+      - spec: gettext
+      - prefix: /usr
     buildable: False
+
   libiconv:
-    paths:
-      libiconv: /usr
+    externals:
+      - spec: libiconv
+      - prefix: /usr
     buildable: False
+
   libtool:
-    paths:
-      libtool: /usr
+    externals:
+      - spec: libtool
+      - prefix: /usr
     buildable: False
+
   m4:
-    paths:
-      m4: /usr
+    externals:
+      - spec: m4
+      - prefix: /usr
     buildable: False
+
   perl:
-    paths:
-      perl: /usr
+    externals:
+      - spec: perl
+      - prefix: /usr
     buildable: False
+
   pkg-config:
-    paths:
-      pkg-config: /usr
+    externals:
+      - spec: pkg-config
+      - prefix: /usr
     buildable: False
+
   tar:
+    externals:
+      - spec: tar
+      - prefix: /usr
     paths:
       tar: /usr
     buildable: False
+
   graphviz:
-    paths:
-      graphviz: /usr
+    externals:
+      - spec: graphviz
+      - prefix: /usr
     buildable: False
 
 
