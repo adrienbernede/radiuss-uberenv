@@ -39,74 +39,74 @@ packages::
     version: [3.14.5]
     externals:
       - spec: cmake@3.14.5
-      - prefix: /usr/tce/packages/cmake/cmake-3.14.5
+        prefix: /usr/tce/packages/cmake/cmake-3.14.5
     buildable: False
 
   netlib-lapack:
     externals:
       - spec: netlib-lapack@3.6.1
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
 # System level packages to not build
   autoconf:
     externals:
       - spec: autoconf
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   automake:
     externals:
       - spec: automake
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   bzip2:
     externals:
       - spec: bzip2
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   gettext:
     externals:
       - spec: gettext
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   libiconv:
     externals:
       - spec: libiconv
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   libtool:
     externals:
       - spec: libtool
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   m4:
     externals:
       - spec: m4
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   perl:
     externals:
       - spec: perl
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   pkg-config:
     externals:
       - spec: pkg-config
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
   tar:
     externals:
       - spec: tar
-      - prefix: /usr
+        prefix: /usr
     paths:
       tar: /usr
     buildable: False
@@ -114,7 +114,7 @@ packages::
   graphviz:
     externals:
       - spec: graphviz
-      - prefix: /usr
+        prefix: /usr
     buildable: False
 
 
